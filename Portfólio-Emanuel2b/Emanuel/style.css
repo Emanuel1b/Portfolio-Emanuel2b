@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal: #4A69AD; /* Azul suave para textos principais */
+    --cor-secundaria: #2C3E50; /* Azul escuro para títulos */
+    --cor-destaque: #E91E63; /* Rosa vibrante para destaque */
+    --cor-fundo: #f4f4f9; /* Fundo claro e neutro */
+    --cor-fundo-card: #ffffff; /* Fundo de cartões */
+    --cor-borda: #dcdcdc; /* Borda suave para cartões e seções */
+}
+
+/* Corpo do documento */
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: #6C7A89; /* Cor de destaque para badges */
+}
+
+/* Seção de projetos */
+#projetos {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.accordion-header {
+    background-color: #f8f9fa;
+}
+
+button.accordion-button {
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    background-color: #f8f9fa;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+button.accordion-button:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--cor-destaque);
+}
+
+.accordion-body {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #C2185B; /* Tom mais escuro do destaque ao passar o mouse */
+}
+
+/* Seção de participação escolar */
+#participacao {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-top: 1px solid var(--cor-borda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer div a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer div a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+}
